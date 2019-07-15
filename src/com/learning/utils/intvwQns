@@ -1,0 +1,11 @@
+GoldmanSachs
+Given a string 1201 find all possible combinations of strings can be formed. a =1 , b=2 ....
+1201
+
+1 2 1   - aba
+12 1 - ka
+1 20 1 - ata
+
+FiveTran
+Sort number based on the number of set bits in binary form. if the set bits are equal for two numbers sort based on decimal number.
+Make a webservice call and parse the json output
