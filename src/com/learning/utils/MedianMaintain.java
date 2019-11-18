@@ -34,32 +34,32 @@ public class MedianMaintain
         for(int i = 1; i < a.length; i++)
         {
 
-            int x = a[i];
+            int currentElement = a[i];
 
             // case1(left side heap has more elements)
             if(smaller.size() > greater.size())
             {
-                if(x < med)
+                if(currentElement < med)
                 {
                     greater.add(smaller.remove());
-                    smaller.add(x);
+                    smaller.add(currentElement);
                 }
                 else
-                    greater.add(x);
+                    greater.add(currentElement);
                 med = (double)(smaller.peek() + greater.peek())/2;
             }
 
             // case2(both heaps are balanced)
             else if(smaller.size() == greater.size())
             {
-                if(x < med)
+                if(currentElement < med)
                 {
-                    smaller.add(x);
+                    smaller.add(currentElement);
                     med = (double)smaller.peek();
                 }
                 else
                 {
-                    greater.add(x);
+                    greater.add(currentElement);
                     med = (double)greater.peek();
                 }
             }
@@ -67,13 +67,13 @@ public class MedianMaintain
             // case3(right side heap has more elements)
             else
             {
-                if(x > med)
+                if(currentElement > med)
                 {
                     smaller.add(greater.remove());
-                    greater.add(x);
+                    greater.add(currentElement);
                 }
                 else
-                    smaller.add(x);
+                    smaller.add(currentElement);
                 med = (double)(smaller.peek() + greater.peek())/2;
 
             }
