@@ -1,0 +1,23 @@
+1. MaxPathSum
+Given a non-empty binary tree, find the maximum path sum.
+
+For this problem, a path is defined as any sequence of nodes from some starting node to any node in
+the tree along the parent-child connections.
+The path must contain at least one node and does not need to go through the root.
+
+#######################################################################################################################
+
+2. Diameter of a binary tree
+
+Given a binary tree, you need to compute the length of the diameter of the tree. The diameter of a binary
+tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
+
+#######################################################################################################################
+
+3. Mirror  image of a binary tree.
+
+#######################################################################################################################
+
+4. Median of two sorted arrays
+
+5. Find kth largest element - sorting, heap and O(n) using quicksort method
